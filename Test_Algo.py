@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.image as mpimg
+from matplotlib.image import imsave
 import matplotlib.pyplot as plt
 from PIL import Image
 from numpy import asarray
@@ -7,6 +8,7 @@ from CompressionForDegradedReconstruction_HEVC_ADMM_several_displays import cfdr
 from HEVCWrapper import CompressDecompress
 import utils
 import os
+import pickle
 
 IMAGES_MAIN_FOLDER_NAME = 'images'
 
@@ -36,8 +38,8 @@ def fgaussian(size, sigma):
     return f
 
 def main():
-    compression_factor_grid = [1]  # use this for a single example at a specific compression working-point
-    # compression_factor_grid = 1:5: 41; # use this for getting rate - distortion curves
+    #compression_factor_grid = [1]  # use this for a single example at a specific compression working-point
+    compression_factor_grid = [i for i in range(1,42,5)] # use this for getting rate - distortion curves
 
     # image_filenames_list = {'almonds_300x300.png', 'flowers_300x300.png', 'billiard_balls_a_300x300.png',
     # 'cards_a_300x300.png', 'ducks_300x300.png', 'garden_table_300x300.png'};
@@ -45,10 +47,15 @@ def main():
     # 'ucid00291.tif', 'ucid00350.tif'};
     # image_filenames_list = {'berkely_starfish.jpg', 'berkely_bears.jpg', 'berkely_boats.jpg',
     # 'berkely_butterfly.jpg', 'berkely_flower_and_bugs.jpg', 'berkely_sea.jpg'};
-    image_filenames_list = ['berkely_flower_and_bugs.jpg'] # TODO: Download all images
+    image_filenames_list = ['berkely_flower_and_bugs.jpg']  # TODO: Download all images
+    #image_filenames_list = ['23.jpg']  # TODO: Download all images
 
     for image_filename in image_filenames_list:
         image_path = os.path.join(IMAGES_MAIN_FOLDER_NAME, image_filename)
+        image_name = image_filename.split(".")[0]
+
+        result_path = os.path.join(os.getcwd(), "results", image_name)
+        os.makedirs(result_path, exist_ok=True)
         # load the image
         image = Image.open(image_path)
         rgb_image = image.convert('RGB')
@@ -98,20 +105,34 @@ def main():
 
             # deblur
             clean_reconstruction, bpp = cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor)
-
-            our_deteriorated_reconstruction_display1 = utils.ApplyNoiseBlur(clean_reconstruction, K_set[0])
-            our_deteriorated_reconstruction_display2 = utils.ApplyNoiseBlur(clean_reconstruction, K_set[1])
-            our_deteriorated_reconstruction_display3 = utils.ApplyNoiseBlur(clean_reconstruction, K_set[2])
-
-            deteriorated_psnr_values[lambda_counter] = K_weights[0] * utils.CalcPSNR(I, our_deteriorated_reconstruction_display1, 1) +\
-            K_weights[1] * utils.CalcPSNR(I, our_deteriorated_reconstruction_display2, 1) + \
-            K_weights[2] * utils.CalcPSNR(I, our_deteriorated_reconstruction_display3, 1)
-
-            deteriorated_mse_values[lambda_counter] = K_weights[0] * utils.CalcMSE(I, our_deteriorated_reconstruction_display1) +\
-            K_weights[1] * utils.CalcMSE(I, our_deteriorated_reconstruction_display2) + \
-            K_weights[2] * utils.CalcMSE(I, our_deteriorated_reconstruction_display3)
-
             bpp_values[lambda_counter] = bpp
+
+            imsave('results/{}/{}_algo_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_name,
+                  image_name,
+                  compression_factor,
+                  bpp,
+                  utils.CalcPSNR(I, clean_reconstruction, 1)),
+                  clean_reconstruction, cmap='gray')
+
+            deteriorated_psnr_values[lambda_counter] = 0
+            deteriorated_mse_values[lambda_counter] = 0
+
+            for i in range(number_of_displays):
+                our_deteriorated_reconstruction_display = utils.ApplyNoiseBlur(clean_reconstruction, K_set[i])
+                PSNR_val = utils.CalcPSNR(I, our_deteriorated_reconstruction_display, 1)
+                MSE = utils.CalcMSE(I, our_deteriorated_reconstruction_display)
+
+                deteriorated_psnr_values[lambda_counter] += PSNR_val * K_weights[i]
+                deteriorated_mse_values[lambda_counter] += MSE * K_weights[i]
+
+                # save images
+                imsave('results/{}/{}_algo_display_{}_qp_{}_bpp_{}_PSNR_{}.png'.format(image_name,
+                      image_name,
+                      i,
+                      compression_factor,
+                      bpp,
+                      PSNR_val),
+                       our_deteriorated_reconstruction_display, cmap='gray')
 
         ####### End of Proposed Algorithm  ---------------------- ############
 
@@ -123,28 +144,40 @@ def main():
         regular_deteriorated_mse_values = np.zeros((number_of_compression_factors, 1))
 
         compressed_file = 'temp.bpg'
-
         for compression_factor_counter, compression_factor in enumerate(compression_factor_grid):
 
             regular_clean_reconstruction = CompressDecompress(255 * I, compression_factor, compressed_file)
             regular_clean_reconstruction = regular_clean_reconstruction / 255.0
 
-            regular_deteriorated_reconstruction_display1 = utils.ApplyNoiseBlur(regular_clean_reconstruction, K_set[0])
-            regular_deteriorated_reconstruction_display2 = utils.ApplyNoiseBlur(regular_clean_reconstruction, K_set[1])
-            regular_deteriorated_reconstruction_display3 = utils.ApplyNoiseBlur(regular_clean_reconstruction, K_set[2])
-
-            regular_deteriorated_psnr_values[compression_factor_counter] = \
-                K_weights[0] * utils.CalcPSNR(I, regular_deteriorated_reconstruction_display1, 1) + \
-                K_weights[1] * utils.CalcPSNR(I, regular_deteriorated_reconstruction_display2, 1) + \
-                K_weights[2] * utils.CalcPSNR(I, regular_deteriorated_reconstruction_display3, 1)
-
-            regular_deteriorated_mse_values[compression_factor_counter] = \
-                K_weights[0] * utils.CalcMSE(I, regular_deteriorated_reconstruction_display1) + \
-                K_weights[1] * utils.CalcMSE(I, regular_deteriorated_reconstruction_display2) + \
-                K_weights[2] * utils.CalcMSE(I, regular_deteriorated_reconstruction_display3)
-
             regular_bpp_values[compression_factor_counter] = utils.calculate_bpp_of_file(compressed_file, I.size)
+            current_bpp = regular_bpp_values[compression_factor_counter][0]
 
+            imsave('results/{}/{}_regular_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_name,
+                  image_name,
+                  compression_factor,
+                  current_bpp,
+                  utils.CalcPSNR(I, regular_clean_reconstruction, 1)),
+                   regular_clean_reconstruction, cmap='gray')
+
+            regular_deteriorated_psnr_values[compression_factor_counter] = 0
+            regular_deteriorated_mse_values[compression_factor_counter] = 0
+
+            for i in range(number_of_displays):
+                regular_deteriorated_reconstruction_display = utils.ApplyNoiseBlur(regular_clean_reconstruction, K_set[i])
+                PSNR_val = utils.CalcPSNR(I, regular_deteriorated_reconstruction_display, 1)
+                MSE = utils.CalcMSE(I, regular_deteriorated_reconstruction_display)
+
+                regular_deteriorated_psnr_values[compression_factor_counter] += PSNR_val * K_weights[i]
+                regular_deteriorated_mse_values[compression_factor_counter] += MSE * K_weights[i]
+
+                # save images
+                imsave('results/{}/{}_regular_display_{}_qp_{}_bpp_{}_PSNR_{}.png'.format(image_name,
+                     image_name,
+                     i,
+                     compression_factor,
+                     current_bpp,
+                     PSNR_val),
+                       regular_deteriorated_reconstruction_display, cmap='gray')
         ####### End of Redernece - Regular compression with degraded reconstruction ########
 
         print("Finished")
@@ -157,13 +190,18 @@ def main():
         print(deteriorated_psnr_values)
 
         # PSNR Graph
-        plt.plot(regular_deteriorated_psnr_values, regular_bpp_values, color='red', linewidth=2, markersize=12)
-        plt.plot(deteriorated_psnr_values, bpp_values, color='green', linestyle='dashed', linewidth=2, markersize=12)
-        plt.xlabel('Compression Rate')
+        max_psnr = max(np.max(regular_deteriorated_psnr_values), np.max(deteriorated_psnr_values))
+        min_psnr = min(np.min(regular_deteriorated_psnr_values), np.min(deteriorated_psnr_values))
+        # max_psnr = np.max(regular_deteriorated_psnr_values)
+        # min_psnr = np.min(regular_deteriorated_psnr_values)
+        line_regular, = plt.plot(regular_bpp_values, regular_deteriorated_psnr_values, color='red', linewidth=2, markersize=12, label="Regular compression")
+        line_algo, = plt.plot(bpp_values, deteriorated_psnr_values, color='green', linestyle='dashed', linewidth=2, markersize=12, label='Algorithm')
+        plt.xlabel('Compression Rate (bpp)')
         plt.ylabel('PSNR')
-        plt.show()
-        image_name = image_filename.split(".")[0]
+        plt.ylim(0.95 * min_psnr, 1.05 * max_psnr)
+        plt.legend(handles=[line_regular, line_algo], loc=4)
         plt.savefig('{}_RDcurve_PSNR_regular_VS_multiple'.format(image_name))
+        plt.show()
 
 if __name__=='__main__':
     main()
