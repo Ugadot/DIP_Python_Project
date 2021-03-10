@@ -1,28 +1,25 @@
 import numpy as np
 from PIL import Image
 import subprocess
-import matplotlib
-import matplotlib.pyplot as plt
-import utils
 import cv2
 
 TMP_INPUT_FILENAME = "tmp_in.png"
 TMP_RECONSTRUCTED_FILENAME = "tmp_out.png"
-ENCODER_PATH = "bpg/bpgenc.exe"
-DECODER_PATH = "bpg/bpgdec.exe"
+ENCODER_PATH = "avif/avif-win-x64.exe"
+DECODER_PATH = "davif/davif/bin/dav1d"
 
 
 def CompressDecompress(orig_img, rate_control, compressed_file_name):
     cv2.imwrite(TMP_INPUT_FILENAME, orig_img)
 
-    hevc_encode_command = [ENCODER_PATH, "-q", str(rate_control), "-o", compressed_file_name, TMP_INPUT_FILENAME]
+    avif_encode_command = [ENCODER_PATH, "-q", str(rate_control), "-o", compressed_file_name, "-e", TMP_INPUT_FILENAME]
 
-    encode_process = subprocess.Popen(hevc_encode_command)
+    encode_process = subprocess.Popen(avif_encode_command)
     encode_process.wait()
 
-    hevc_decode_command = [DECODER_PATH, "-o", TMP_RECONSTRUCTED_FILENAME, compressed_file_name]
+    avif_decode_command = [DECODER_PATH, "-o", TMP_RECONSTRUCTED_FILENAME, "-i", compressed_file_name]
 
-    decode_process = subprocess.Popen(hevc_decode_command)
+    decode_process = subprocess.Popen(avif_decode_command)
     decode_process.wait()
 
     #image = mpimg.imread(TMP_RECONSTRUCTED_FILENAME)

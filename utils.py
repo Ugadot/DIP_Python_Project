@@ -2,12 +2,21 @@ import numpy as np
 from scipy import signal
 import os
 import cv2
+from skimage.measure import compare_ssim
+from skimage.metrics import structural_similarity as ssim
 
 def calculate_bpp_of_file(file_name, number_of_pixels):
     number_of_bytes = os.path.getsize(str(file_name))
     bits = number_of_bytes * 8
     return bits/number_of_pixels
 
+def calculate_bits_of_file(file_name):
+    number_of_bytes = os.path.getsize(str(file_name))
+    bits = number_of_bytes * 8
+    return bits
+
+def calculate_bits_of_file_from_bpp(bpp, number_of_pixels):
+    return bpp * number_of_pixels
 
 def log_guass_pdf (x, sigma):
     d = len(x)
@@ -51,6 +60,15 @@ def CalcPSNR(original_img, decompressed_img, max_value):
     if mse == 0:
         return 100
     return 20 * np.log10(max_value / (np.sqrt(mse)))
+
+
+def CalcSSIM(img1, img2, db=False):
+    '''calculate SSIM
+    '''
+    score, diff = ssim(img1, img2, full=True)
+    if db:
+        score = 10 * np.log10(1 / (1 - score))
+    return score
 
 
 def rgb2gray(rgb):
