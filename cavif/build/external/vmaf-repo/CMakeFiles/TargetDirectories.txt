@@ -1,0 +1,3 @@
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/edit_cache.dir
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/vmaf_repo.dir

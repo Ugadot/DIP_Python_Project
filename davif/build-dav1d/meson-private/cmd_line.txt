@@ -1,0 +1,9 @@
+[options]
+buildtype = debug
+default_library = static
+libdir = lib
+enable_asm = false
+prefix = /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif
+
+[properties]
+

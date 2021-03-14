@@ -1,0 +1,1 @@
+/usr/bin/gcc-8 -rdynamic CMakeFiles/minigzip.dir/test/minigzip.o -o minigzip  -Wl,-rpath,/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/external/zlib libz.so.1.2.11 

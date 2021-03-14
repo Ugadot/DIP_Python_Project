@@ -6,8 +6,8 @@ based on BD functions from https://github.com/google/compare-codecs/blob/master/
 """
 
 def bdsnr(Rate_1, Quality_1, Rate_2, Quality_2):
-    log_rate1 = map(math.log, Rate_1)
-    log_rate2 = map(math.log, Rate_2)
+    log_rate1 = np.log(Rate_1)
+    log_rate2 = np.log(Rate_2)
 
     # Best cubic poly fit for graph represented by log_ratex, psrn_x.
     poly1 = np.polyfit(log_rate1, Quality_1, 3)
@@ -34,10 +34,10 @@ def bdsnr(Rate_1, Quality_1, Rate_2, Quality_2):
 
 
 def bdrate(Rate_1, Quality_1, Rate_2, Quality_2):
-    log_rate1 = map(math.log, Rate_1)
-    log_rate2 = map(math.log, Rate_2)
+    log_rate1 = np.log(Rate_1)
+    log_rate2 = np.log(Rate_2)
 
-    # Best cubic poly fit for graph represented by log_ratex, psrn_x.
+    # Best cubic poly fit for graph represented by log_rate_x, psnr_x.
     poly1 = np.polyfit(Quality_1, log_rate1, 3)
     poly2 = np.polyfit(Quality_2, log_rate2, 3)
 

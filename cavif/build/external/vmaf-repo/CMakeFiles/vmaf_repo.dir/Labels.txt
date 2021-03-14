@@ -1,0 +1,13 @@
+# Target labels
+ vmaf_repo
+# Source files and their labels
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/vmaf_repo
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/vmaf_repo.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/vmaf_repo-complete.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-build.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-configure.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-download.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-install.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-mkdir.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-patch.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-update.rule

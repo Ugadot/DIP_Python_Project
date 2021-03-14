@@ -1,0 +1,485 @@
+Build started at 2021-03-10T20:51:48.350597
+Main binary: /usr/bin/python3
+Build Options: -Denable_asm=false -Dprefix=/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif -Dlibdir=lib -Dbuildtype=debug -Ddefault_library=static
+Python system: Linux
+The Meson build system
+Version: 0.56.2
+Source dir: /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/external/dav1d
+Build dir: /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d
+Build type: native build
+Project name: dav1d
+Project version: 0.8.0
+None of 'CC' are defined in the environment, not changing global flags.
+Using 'CFLAGS' from environment with value: '-g3 -O0 -fno-omit-frame-pointer'
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/sanitycheckc.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/sanitycheckc.exe -g3 -O0 -fno-omit-frame-pointer -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 5.5.0 "cc (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010")
+C linker for the host machine: cc ld.bfd 2.26.1
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CC' are defined in the environment, not changing global flags.
+Using 'CFLAGS' from environment with value: '-g3 -O0 -fno-omit-frame-pointer'
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/sanitycheckc.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/sanitycheckc.exe -g3 -O0 -fno-omit-frame-pointer -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 5.5.0 "cc (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010")
+C linker for the build machine: cc ld.bfd 2.26.1
+None of 'AR' are defined in the environment, not changing global flags.
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Run-time dependency threads found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpt_ts7s2h
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpt_ts7s2h/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpt_ts7s2h/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE 
+
+Code:
+ #include <time.h>
+#include <limits.h>
+
+        #if defined __stub_clock_gettime || defined __stub___clock_gettime
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &clock_gettime;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clock_gettime" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp4o9ph9yx
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp4o9ph9yx/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp4o9ph9yx/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp8gc2otk4
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp8gc2otk4/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp8gc2otk4/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE -Wl,--start-group -ldl -Wl,--end-group 
+
+Code:
+ #include <dlfcn.h>
+#include <limits.h>
+
+        #if defined __stub_dlsym || defined __stub___dlsym
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &dlsym;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "dlsym" with dependency -ldl: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp3uki89n3
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp3uki89n3/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp3uki89n3/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <stdatomic.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "stdatomic.h" : YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpp2im9b9q
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpp2im9b9q/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpp2im9b9q/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <unistd.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "unistd.h" : YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp4he00r87
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp4he00r87/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp4he00r87/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <io.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp4he00r87/testfile.c:2:24: fatal error: io.h: No such file or directory
+compilation terminated.
+
+Check usable header "io.h" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp0qimvae4
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp0qimvae4/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp0qimvae4/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE 
+
+Code:
+ #include <getopt.h>
+#include <limits.h>
+
+        #if defined __stub_getopt_long || defined __stub___getopt_long
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &getopt_long;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getopt_long" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx0b_9isy
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx0b_9isy/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx0b_9isy/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE 
+
+Code:
+ #include <malloc.h>
+#include <limits.h>
+
+        #if defined __stub__aligned_malloc || defined __stub____aligned_malloc
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &_aligned_malloc;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx0b_9isy/testfile.c: In function 'main':
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx0b_9isy/testfile.c:9:32: error: '_aligned_malloc' undeclared (first use in this function)
+             void *a = (void*) &_aligned_malloc;
+                                ^
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx0b_9isy/testfile.c:9:32: note: each undeclared identifier is reported only once for each function it appears in
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp87fesxdq
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp87fesxdq/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp87fesxdq/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE 
+
+Code:
+ #include <malloc.h>
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !0 && !defined(_aligned_malloc) && !0
+            #error "No definition for __builtin__aligned_malloc found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin__aligned_malloc)
+                #error "__builtin__aligned_malloc not found"
+            #endif
+        #elif ! defined(_aligned_malloc)
+            __builtin__aligned_malloc;
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp87fesxdq/testfile.c: In function 'main':
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp87fesxdq/testfile.c:12:14: error: #error "No definition for __builtin__aligned_malloc found in the prefix"
+             #error "No definition for __builtin__aligned_malloc found in the prefix"
+              ^
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp87fesxdq/testfile.c:20:13: error: '__builtin__aligned_malloc' undeclared (first use in this function)
+             __builtin__aligned_malloc;
+             ^
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp87fesxdq/testfile.c:20:13: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "_aligned_malloc" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp5hsugmj9
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp5hsugmj9/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp5hsugmj9/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 -D_GNU_SOURCE 
+
+Code:
+ #include <stdlib.h>
+#include <limits.h>
+
+        #if defined __stub_posix_memalign || defined __stub___posix_memalign
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &posix_memalign;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "posix_memalign" : YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpn219tw43
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpn219tw43/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpn219tw43/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -fvisibility=hidden 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpk1grx80d
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpk1grx80d/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpk1grx80d/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Wundef 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpxvwv0n5_
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpxvwv0n5_/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpxvwv0n5_/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Werror=vla 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=vla: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp75w7rdi0
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp75w7rdi0/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp75w7rdi0/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Wmaybe-uninitialized -Wno-maybe-uninitialized 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-maybe-uninitialized: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx_1zf66u
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx_1zf66u/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpx_1zf66u/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-field-initializers -Wno-missing-field-initializers 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpdjjutrt1
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpdjjutrt1/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpdjjutrt1/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Wunused-parameter -Wno-unused-parameter 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpnucgbl_f
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpnucgbl_f/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpnucgbl_f/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Werror=missing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=missing-prototypes: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp_civ2oax
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp_civ2oax/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp_civ2oax/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Wshorten-64-to-32 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc: error: unrecognized command line option '-Wshorten-64-to-32'
+
+Compiler for C supports arguments -Wshorten-64-to-32: NO 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpz_bl5qon
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpz_bl5qon/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpz_bl5qon/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -mpreferred-stack-boundary=6 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -mpreferred-stack-boundary=6: YES 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpdhcz5i7b
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpdhcz5i7b/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpdhcz5i7b/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -O0 
+
+Code:
+ #ifdef __cplusplus
+        extern "C" {
+        #endif
+        void meson_uscore_prefix (void) {}
+        #ifdef __cplusplus
+        }
+        #endif
+        
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Symbols have underscore prefix: NO
+Configuring config.h using configuration
+Configuring version.h using configuration
+Program doxygen found: NO
+Program dot found: NO
+Configuring cli_config.h using configuration
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp6byekrpl
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp6byekrpl/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmp6byekrpl/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Werror=c11-extensions 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: error: -Werror=c11-extensions: no option -Wc11-extensions
+
+Compiler for C supports arguments -Werror=c11-extensions: NO 
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpgt_dhqdq
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpgt_dhqdq/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpgt_dhqdq/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Werror=c99-c11-compat 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=c99-c11-compat: YES 
+First supported argument: -Werror=c99-c11-compat
+Adding test "common.h_test"
+Adding test "data.h_test"
+Adding test "dav1d.h_test"
+Adding test "headers.h_test"
+Adding test "picture.h_test"
+Program objcopy found: YES (/usr/bin/objcopy)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:   
+
+Code:
+ #include <stdlib.h>
+#include <limits.h>
+
+        #if defined __stub_posix_memalign || defined __stub___posix_memalign
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &posix_memalign;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Checking for function "posix_memalign" : YES (cached)
+Build targets in project: 19
+
+Option buildtype is: debug [default: release]
+Found ninja-1.10.0.git.kitware.jobserver-1 at /home/uriga/.local/bin/ninja
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpwbnrgvm_
+Command line:  cc /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpwbnrgvm_/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d/meson-private/tmpwbnrgvm_/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/5/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/5/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/5/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+None of 'STRIP' are defined in the environment, not changing global flags.
+None of 'STRIP' are defined in the environment, not changing global flags.
+NOTICE: You are using Python 3.5 which is EOL. Starting with v0.57, Meson will require Python 3.6 or newer

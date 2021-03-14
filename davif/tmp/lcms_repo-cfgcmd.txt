@@ -1,0 +1,1 @@
+cmd='env;CFLAGS=-g3 -O0 -fno-omit-frame-pointer;/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/external/libavif-container/external/Little-CMS/configure;--prefix=/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif;--enable-static;--disable-shared;--without-zlib;--without-jpeg;--without-tiff'

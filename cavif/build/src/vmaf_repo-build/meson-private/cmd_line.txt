@@ -1,0 +1,10 @@
+[options]
+buildtype = debug
+enable_asm = false
+default_library = static
+enable_tests = false
+libdir = lib
+prefix = /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build
+
+[properties]
+

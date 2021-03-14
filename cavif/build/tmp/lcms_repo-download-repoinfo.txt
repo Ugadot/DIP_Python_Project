@@ -1,0 +1,5 @@
+method=url
+url=/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/external/libavif-container/external/Little-CMS
+hash=
+source_dir=/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/lcms_repo
+

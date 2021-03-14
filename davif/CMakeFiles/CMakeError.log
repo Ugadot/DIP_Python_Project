@@ -1,0 +1,34 @@
+Determining if the strtod_l exist failed with the following output:
+Change Dir: /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9d159/fast && /usr/bin/make  -f CMakeFiles/cmTC_9d159.dir/build.make CMakeFiles/cmTC_9d159.dir/build
+make[1]: Entering directory '/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d159.dir/CheckSymbolExists.c.o
+/usr/bin/gcc-8    -o CMakeFiles/cmTC_9d159.dir/CheckSymbolExists.c.o -c /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘strtod_l’ undeclared (first use in this function); did you mean ‘strtoull’?
+   return ((int*)(&strtod_l))[argc];
+                   ^~~~~~~~
+                   strtoull
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles/cmTC_9d159.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_9d159.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9d159.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_9d159/fast' failed
+make: *** [cmTC_9d159/fast] Error 2
+
+
+File /mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtod_l
+  return ((int*)(&strtod_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

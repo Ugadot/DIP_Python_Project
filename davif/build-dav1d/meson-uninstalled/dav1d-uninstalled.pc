@@ -1,0 +1,10 @@
+prefix=/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/build-dav1d
+srcdir=/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/external/dav1d
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libdav1d
+Description: AV1 decoding library
+Version: 0.8.0
+Libs: -L${prefix}/src -ldav1d -pthread -ldl
+Cflags: -I${prefix}/src -I${srcdir}/src -I${prefix}/. -I${srcdir}/. -I${prefix}/include/dav1d -I${srcdir}/include/dav1d -I${prefix}/include -I${srcdir}/include -pthread

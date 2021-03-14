@@ -27,13 +27,16 @@ def CompressDecompress(orig_img, rate_control, compressed_file_name):
 
     #image = mpimg.imread(TMP_RECONSTRUCTED_FILENAME)
     #image = plt.imread(TMP_RECONSTRUCTED_FILENAME)
-    rgba_image = Image.open(TMP_INPUT_FILENAME)
+    rgba_image = Image.open(TMP_RECONSTRUCTED_FILENAME)
     rgb_image = rgba_image.convert('RGB')
     image = np.array(rgb_image)
     reconstructed_img = image[:, :, 0]
-    # reconstructed_img = utils.rgb2gray(image)
+    #reconstructed_img = utils.rgb2gray(image)
     # reconstructed_img = np.asarray(reconstructed_img)
 
     # TODO: Add mechanism to delete temporary images used by encoder
+    # remove_command = ["rm", "-rf", TMP_INPUT_FILENAME, TMP_RECONSTRUCTED_FILENAME, compressed_file_name]
+    # cleanup_process = subprocess.Popen(remove_command)
+    # cleanup_process.wait()
 
     return reconstructed_img

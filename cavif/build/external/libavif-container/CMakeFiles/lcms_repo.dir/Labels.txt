@@ -1,0 +1,13 @@
+# Target labels
+ lcms_repo
+# Source files and their labels
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/libavif-container/CMakeFiles/lcms_repo
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/libavif-container/CMakeFiles/lcms_repo.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/libavif-container/CMakeFiles/lcms_repo-complete.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/lcms_repo-stamp/lcms_repo-build.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/lcms_repo-stamp/lcms_repo-configure.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/lcms_repo-stamp/lcms_repo-download.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/lcms_repo-stamp/lcms_repo-install.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/lcms_repo-stamp/lcms_repo-mkdir.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/lcms_repo-stamp/lcms_repo-patch.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/lcms_repo-stamp/lcms_repo-update.rule

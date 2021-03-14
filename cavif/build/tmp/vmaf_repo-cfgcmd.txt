@@ -1,0 +1,1 @@
+cmd='env;CFLAGS=-g3 -O0 -fno-omit-frame-pointer;meson;setup;--prefix=/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build;--libdir=lib;--default-library;static;--buildtype=debug;-Denable_asm=false;-Denable_tests=false;/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/external/vmaf/libvmaf;.'
