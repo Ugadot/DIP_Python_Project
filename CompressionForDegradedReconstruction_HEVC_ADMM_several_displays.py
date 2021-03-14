@@ -9,6 +9,10 @@ from HEVCWrapper import CompressDecompress as hevc
 from AVIFWrapper import CompressDecompress as avif
 
 
+CODECS_FILE_EXT = {"HEVC": "bpg", "AVIF": "avif"}
+CODECS_WRAPPERS = {"HEVC": hevc, "AVIF": avif}
+
+
 def GetLinearOperatorforBicG(K_set, K_weights, counts, beta, my_lambda, ss):
     """
     Return a LinearOperator to use the BIC-G algorithm from scipy library
@@ -46,10 +50,12 @@ def GetLinearOperatorforBicG(K_set, K_weights, counts, beta, my_lambda, ss):
 
 
 
-def cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor):
+def cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor, codec):
     dummy = 1
-    #compressed_file = 'temp.bpg'
-    compressed_file = 'temp.avif'
+    compressed_file = 'temp.{}'.format(CODECS_FILE_EXT[codec])
+
+    func = CODECS_WRAPPERS[codec]
+
     (image_height, image_width) = I.shape
     cleanI = I
     u = np.zeros(np.shape(cleanI), dtype=float)
@@ -84,7 +90,7 @@ def cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor):
         cleanI255_tilde = 255 * cleanI_tilde
 
         #iteration_decompressed = hevc(cleanI255_tilde, compression_factor, compressed_file)
-        iteration_decompressed = avif(cleanI255_tilde, compression_factor, compressed_file)
+        iteration_decompressed = func(cleanI255_tilde, compression_factor, compressed_file)
         iteration_decompressed = iteration_decompressed / 255
 
         I1 = iteration_decompressed

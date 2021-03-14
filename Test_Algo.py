@@ -112,7 +112,7 @@ def main():
             beta = 10 * beta
 
             # deblur
-            clean_reconstruction, bpp = cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor)
+            clean_reconstruction, bpp = cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor, CODEC)
             bpp_values[lambda_counter] = bpp
             bitrate_values[lambda_counter] = utils.calculate_bits_of_file_from_bpp(bpp, I.size)
 
