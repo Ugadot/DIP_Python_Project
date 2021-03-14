@@ -1,0 +1,5 @@
+method=url
+url=/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/external/dav1d
+hash=
+source_dir=/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/src/dav1d_repo
+

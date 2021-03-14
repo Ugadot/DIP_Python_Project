@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from numpy import asarray
 from CompressionForDegradedReconstruction_HEVC_ADMM_several_displays import cfdr
-from HEVCWrapper import CompressDecompress
+from HEVCWrapper import CompressDecompress as hevc
 from AVIFWrapper import CompressDecompress as avif
 import utils
 import os
@@ -92,55 +92,55 @@ def main():
 
 
         ####### Proposed Algorithm  ---------------------- ############3
-        # for lambda_counter, compression_factor in enumerate(compression_factor_grid):
-        #     if compression_factor > 45:
-        #         beta = 0.45
-        #     elif compression_factor > 40:
-        #         beta = 0.35
-        #     elif compression_factor > 30:
-        #         beta = 0.10
-        #     elif compression_factor > 20:
-        #         beta = 0.05
-        #     else:
-        #         beta = 0.03
-        #
-        #     beta = 10 * beta
-        #
-        #     # deblur
-        #     clean_reconstruction, bpp = cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor)
-        #     bpp_values[lambda_counter] = bpp
-        #     bitrate_values[lambda_counter] = utils.calculate_bits_of_file_from_bpp(bpp, I.size)
-        #
-        #     imsave('results/{}/{}_algo_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_name,
-        #           image_name,
-        #           compression_factor,
-        #           bpp,
-        #           utils.CalcPSNR(I, clean_reconstruction, 1)),
-        #           clean_reconstruction, cmap='gray')
-        #
-        #     deteriorated_psnr_values[lambda_counter] = 0
-        #     deteriorated_ssim_values[lambda_counter] = 0
-        #     deteriorated_mse_values[lambda_counter] = 0
-        #
-        #     for i in range(number_of_displays):
-        #         our_deteriorated_reconstruction_display = utils.ApplyNoiseBlur(clean_reconstruction, K_set[i])
-        #         PSNR_val = utils.CalcPSNR(I, our_deteriorated_reconstruction_display, 1)
-        #         SSIM_val = utils.CalcSSIM(I, our_deteriorated_reconstruction_display, True)
-        #         MSE = utils.CalcMSE(I, our_deteriorated_reconstruction_display)
-        #
-        #         deteriorated_psnr_values[lambda_counter] += PSNR_val * K_weights[i]
-        #         deteriorated_ssim_values[lambda_counter] += SSIM_val * K_weights[i]
-        #         deteriorated_mse_values[lambda_counter] += MSE * K_weights[i]
-        #
-        #         # save images
-        #         imsave('results/{}/{}_algo_display_{}_qp_{}_bpp_{}_PSNR_{}_SSIM{}.png'.format(image_name,
-        #               image_name,
-        #               i,
-        #               compression_factor,
-        #               bpp,
-        #               PSNR_val,
-        #               SSIM_val),
-        #                our_deteriorated_reconstruction_display, cmap='gray')
+        for lambda_counter, compression_factor in enumerate(compression_factor_grid):
+            if compression_factor > 45:
+                beta = 0.45
+            elif compression_factor > 40:
+                beta = 0.35
+            elif compression_factor > 30:
+                beta = 0.10
+            elif compression_factor > 20:
+                beta = 0.05
+            else:
+                beta = 0.03
+
+            beta = 10 * beta
+
+            # deblur
+            clean_reconstruction, bpp = cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor)
+            bpp_values[lambda_counter] = bpp
+            bitrate_values[lambda_counter] = utils.calculate_bits_of_file_from_bpp(bpp, I.size)
+
+            imsave('results/{}/{}_algo_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_name,
+                  image_name,
+                  compression_factor,
+                  bpp,
+                  utils.CalcPSNR(I, clean_reconstruction, 1)),
+                  clean_reconstruction, cmap='gray')
+
+            deteriorated_psnr_values[lambda_counter] = 0
+            deteriorated_ssim_values[lambda_counter] = 0
+            deteriorated_mse_values[lambda_counter] = 0
+
+            for i in range(number_of_displays):
+                our_deteriorated_reconstruction_display = utils.ApplyNoiseBlur(clean_reconstruction, K_set[i])
+                PSNR_val = utils.CalcPSNR(I, our_deteriorated_reconstruction_display, 1)
+                SSIM_val = utils.CalcSSIM(I, our_deteriorated_reconstruction_display, True)
+                MSE = utils.CalcMSE(I, our_deteriorated_reconstruction_display)
+
+                deteriorated_psnr_values[lambda_counter] += PSNR_val * K_weights[i]
+                deteriorated_ssim_values[lambda_counter] += SSIM_val * K_weights[i]
+                deteriorated_mse_values[lambda_counter] += MSE * K_weights[i]
+
+                # save images
+                imsave('results/{}/{}_algo_display_{}_qp_{}_bpp_{}_PSNR_{}_SSIM{}.png'.format(image_name,
+                      image_name,
+                      i,
+                      compression_factor,
+                      bpp,
+                      PSNR_val,
+                      SSIM_val),
+                       our_deteriorated_reconstruction_display, cmap='gray')
 
         ####### End of Proposed Algorithm  ---------------------- ############
 
@@ -157,7 +157,7 @@ def main():
         compressed_file = 'temp.avif'
         for compression_factor_counter, compression_factor in enumerate(compression_factor_grid):
 
-            #regular_clean_reconstruction = CompressDecompress(255 * I, compression_factor, compressed_file)
+            #regular_clean_reconstruction = hevc(255 * I, compression_factor, compressed_file)
             regular_clean_reconstruction = avif(255 * I, compression_factor, compressed_file)
             regular_clean_reconstruction = regular_clean_reconstruction / 255.0
 
@@ -198,22 +198,22 @@ def main():
         ####### End of Redernece - Regular compression with degraded reconstruction ########
 
         print("Finished")
-        # print(regular_bpp_values)
-        # print(regular_deteriorated_mse_values)
-        # print(regular_deteriorated_psnr_values)
-        #
-        # print(bpp_values)
-        # print(deteriorated_mse_values)
-        # print(deteriorated_psnr_values)
+        print(regular_bpp_values)
+        print(regular_deteriorated_mse_values)
+        print(regular_deteriorated_psnr_values)
+
+        print(bpp_values)
+        print(deteriorated_mse_values)
+        print(deteriorated_psnr_values)
 
 
         # PSNR Graph
-        #PrintGraph(regular_bitrate_values, bitrate_values, regular_bpp_values, bpp_values, regular_deteriorated_psnr_values, deteriorated_psnr_values, "PSNR", image_name)
-        PrintGraph(regular_bitrate_values, regular_bitrate_values, regular_bpp_values, regular_bpp_values, regular_deteriorated_psnr_values, regular_deteriorated_psnr_values, "PSNR",image_name)
+        PrintGraph(regular_bitrate_values, bitrate_values, regular_bpp_values, bpp_values, regular_deteriorated_psnr_values, deteriorated_psnr_values, "PSNR", image_name)
+        #PrintGraph(regular_bitrate_values, regular_bitrate_values, regular_bpp_values, regular_bpp_values, regular_deteriorated_psnr_values, regular_deteriorated_psnr_values, "PSNR",image_name)
 
         #SSIM Graph
-        #PrintGraph(regular_bitrate_values, bitrate_values, regular_bpp_values, bpp_values, regular_deteriorated_ssim_values, deteriorated_ssim_values, "SSIM",image_name)
-        PrintGraph(regular_bitrate_values, regular_bitrate_values, regular_bpp_values, regular_bpp_values, regular_deteriorated_ssim_values, regular_deteriorated_ssim_values, "SSIM", image_name)
+        PrintGraph(regular_bitrate_values, bitrate_values, regular_bpp_values, bpp_values, regular_deteriorated_ssim_values, deteriorated_ssim_values, "SSIM",image_name)
+        #PrintGraph(regular_bitrate_values, regular_bitrate_values, regular_bpp_values, regular_bpp_values, regular_deteriorated_ssim_values, regular_deteriorated_ssim_values, "SSIM", image_name)
 
 def PrintGraph(rate1, rate2, bpp1, bpp2, quality1, quality2, metric, image_name):
     bdrate_metric = bdrate(rate1.flatten(), quality1.flatten(), rate2.flatten(), quality2.flatten())
@@ -228,8 +228,7 @@ def PrintGraph(rate1, rate2, bpp1, bpp2, quality1, quality2, metric, image_name)
     plt.ylabel(metric)
     plt.ylim(0.99 * min_quality, 1.01 * max_quality)
     plt.legend(handles=[line_regular, line_algo], loc=4)
-    #plt.savefig('RD_curve_{}_regular_VS_multiple_{}_bdrate_{}.png'.format(image_name, metric, bdrate_metric))
-    plt.savefig('RD_curve_{}_regular_VS_multiple_{}_bdrate_{}.png'.format(image_name, metric, "0"))
+    plt.savefig('RD_curve_{}_regular_VS_multiple_{}_bdrate_{}.png'.format(image_name, metric, bdrate_metric))
     plt.show()
 
 if __name__=='__main__':

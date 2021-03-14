@@ -1,0 +1,13 @@
+# Target labels
+ dav1d_repo
+# Source files and their labels
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/dav1d_repo
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/dav1d_repo.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/CMakeFiles/dav1d_repo-complete.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/src/dav1d_repo-stamp/dav1d_repo-build.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/src/dav1d_repo-stamp/dav1d_repo-configure.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/src/dav1d_repo-stamp/dav1d_repo-download.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/src/dav1d_repo-stamp/dav1d_repo-install.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/src/dav1d_repo-stamp/dav1d_repo-mkdir.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/src/dav1d_repo-stamp/dav1d_repo-patch.rule
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/src/dav1d_repo-stamp/dav1d_repo-update.rule

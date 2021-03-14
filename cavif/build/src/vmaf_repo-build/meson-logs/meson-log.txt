@@ -1,0 +1,198 @@
+Build started at 2021-03-14T11:47:28.278699
+Main binary: /usr/bin/python3
+Build Options: -Denable_asm=false -Denable_tests=false -Dprefix=/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build -Dlibdir=lib -Dbuildtype=debug -Ddefault_library=static
+Python system: Linux
+The Meson build system
+Version: 0.56.2
+Source dir: /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/external/vmaf/libvmaf
+Build dir: /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build
+Build type: native build
+Project name: libvmaf
+Project version: 1.5.3
+Using 'CC' from environment with value: '/usr/bin/gcc-8'
+Using 'CFLAGS' from environment with value: '-g3 -O0 -fno-omit-frame-pointer'
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: /usr/bin/gcc-8
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: /usr/bin/gcc-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckc.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckc.exe -g3 -O0 -fno-omit-frame-pointer -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckc.exe
+C compiler for the host machine: /usr/bin/gcc-8 (gcc 8.4.0 "gcc-8 (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0")
+C linker for the host machine: /usr/bin/gcc-8 ld.bfd 2.26.1
+None of 'AR' are defined in the environment, not changing global flags.
+Using 'CXX' from environment with value: '/usr/bin/g++-8'
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: /usr/bin/g++-8
+Is cross compiler: False.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: /usr/bin/g++-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckcpp.cc -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: /usr/bin/g++-8 (gcc 8.4.0 "g++-8 (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0")
+C++ linker for the host machine: /usr/bin/g++-8 ld.bfd 2.26.1
+Using 'CC' from environment with value: '/usr/bin/gcc-8'
+Using 'CFLAGS' from environment with value: '-g3 -O0 -fno-omit-frame-pointer'
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: /usr/bin/gcc-8
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: /usr/bin/gcc-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckc.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckc.exe -g3 -O0 -fno-omit-frame-pointer -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckc.exe
+C compiler for the build machine: /usr/bin/gcc-8 (gcc 8.4.0 "gcc-8 (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0")
+C linker for the build machine: /usr/bin/gcc-8 ld.bfd 2.26.1
+None of 'AR' are defined in the environment, not changing global flags.
+Using 'CXX' from environment with value: '/usr/bin/g++-8'
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: /usr/bin/g++-8
+Is cross compiler: False.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: /usr/bin/g++-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckcpp.cc -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: /usr/bin/g++-8 (gcc 8.4.0 "g++-8 (Ubuntu 8.4.0-1ubuntu1~16.04.1) 8.4.0")
+C++ linker for the build machine: /usr/bin/g++-8 ld.bfd 2.26.1
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmp3_qh9y9w
+Command line:  /usr/bin/gcc-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmp3_qh9y9w/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmp3_qh9y9w/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #include <stdatomic.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Check usable header "stdatomic.h" : YES 
+Configuring version.h using configuration
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpws195mjj
+Command line:  /usr/bin/gcc-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpws195mjj/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpws195mjj/output.obj -pipe -c -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -O0 
+
+Code:
+ #ifdef __cplusplus
+        extern "C" {
+        #endif
+        void meson_uscore_prefix (void) {}
+        #ifdef __cplusplus
+        }
+        #endif
+        
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Symbols have underscore prefix: NO
+Configuring config.h using configuration
+Run-time dependency threads found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpimt6s29o
+Command line:  /usr/bin/gcc-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpimt6s29o/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpimt6s29o/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpq5rj3qpr
+Command line:  /usr/bin/gcc-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpq5rj3qpr/testfile.c -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpq5rj3qpr/output.exe -pipe -g3 -O0 -fno-omit-frame-pointer -D_FILE_OFFSET_BITS=64 -O0 -std=c99 
+
+Code:
+ 
+        #define strsep meson_disable_define_of_strsep
+        
+        #include <limits.h>
+        #undef strsep
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strsep (void);
+        
+        #if defined __stub_strsep || defined __stub___strsep
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strsep ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strsep" : YES 
+Program doxygen found: NO
+Build targets in project: 12
+
+Option buildtype is: debug [default: release]
+Found ninja-1.10.0.git.kitware.jobserver-1 at /home/uriga/.local/bin/ninja
+Running compile:
+Working directory:  /tmp/tmpq55g6mh1
+Command line:  /usr/bin/g++-8 /tmp/tmpq55g6mh1/testfile.cpp -o /tmp/tmpq55g6mh1/output.obj -pipe -D_FILE_OFFSET_BITS=64 -c -std=c++11 
+
+Code:
+ int i = static_cast<int>(0);
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler accepts -std=c++11: YES
+Running compile:
+Working directory:  /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpm6nq6af9
+Command line:  /usr/bin/g++-8 /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpm6nq6af9/testfile.cpp -o /mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build/meson-private/tmpm6nq6af9/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/8/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/8/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/8/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+None of 'STRIP' are defined in the environment, not changing global flags.
+None of 'STRIP' are defined in the environment, not changing global flags.
+NOTICE: You are using Python 3.5 which is EOL. Starting with v0.57, Meson will require Python 3.6 or newer

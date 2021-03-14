@@ -1,0 +1,16 @@
+# List of files installed by Meson
+# Does not contain files installed by custom scripts.
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/lib/libdav1d.a
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/bin/dav1d
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/include/dav1d/common.h
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/include/dav1d/data.h
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/include/dav1d/dav1d.h
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/include/dav1d/headers.h
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/include/dav1d/picture.h
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/include/dav1d/version.h
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/lib/pkgconfig/dav1d.pc
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/lib/pkgconfig
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/include/dav1d
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/include
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/bin
+/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/lib

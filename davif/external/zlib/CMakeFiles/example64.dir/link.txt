@@ -1,0 +1,1 @@
+/usr/bin/gcc-8 -rdynamic CMakeFiles/example64.dir/test/example.o -o example64  -Wl,-rpath,/mnt/c/Users/user/Documents/DIP_Python_Project/davif/davif/external/zlib libz.so.1.2.11 

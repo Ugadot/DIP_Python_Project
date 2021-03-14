@@ -5,7 +5,8 @@ from scipy import signal
 from scipy.sparse.linalg import bicg
 from scipy.sparse.linalg import LinearOperator
 import utils
-from HEVCWrapper import CompressDecompress
+from HEVCWrapper import CompressDecompress as hevc
+from AVIFWrapper import CompressDecompress as avif
 
 
 def GetLinearOperatorforBicG(K_set, K_weights, counts, beta, my_lambda, ss):
@@ -47,7 +48,8 @@ def GetLinearOperatorforBicG(K_set, K_weights, counts, beta, my_lambda, ss):
 
 def cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor):
     dummy = 1
-    compressed_file = 'temp.bpg'
+    #compressed_file = 'temp.bpg'
+    compressed_file = 'temp.avif'
     (image_height, image_width) = I.shape
     cleanI = I
     u = np.zeros(np.shape(cleanI), dtype=float)
@@ -81,7 +83,8 @@ def cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor):
         cleanI_tilde = cleanI - u
         cleanI255_tilde = 255 * cleanI_tilde
 
-        iteration_decompressed = CompressDecompress(cleanI255_tilde, compression_factor, compressed_file)
+        #iteration_decompressed = hevc(cleanI255_tilde, compression_factor, compressed_file)
+        iteration_decompressed = avif(cleanI255_tilde, compression_factor, compressed_file)
         iteration_decompressed = iteration_decompressed / 255
 
         I1 = iteration_decompressed

@@ -1,0 +1,464 @@
+[
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_cpu.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_cpu.a.p/cpu.c.o -MF src/liblibvmaf_rc_cpu.a.p/cpu.c.o.d -o src/liblibvmaf_rc_cpu.a.p/cpu.c.o -c ../../../external/vmaf/libvmaf/src/cpu.c",
+    "file": "../../../external/vmaf/libvmaf/src/cpu.c",
+    "output": "src/liblibvmaf_rc_cpu.a.p/cpu.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libptools.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -D_REENTRANT -MD -MQ src/libptools.so.p/third_party_ptools_m2pythontools.cc.o -MF src/libptools.so.p/third_party_ptools_m2pythontools.cc.o.d -o src/libptools.so.p/third_party_ptools_m2pythontools.cc.o -c ../../../external/vmaf/libvmaf/src/third_party/ptools/m2pythontools.cc",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/ptools/m2pythontools.cc",
+    "output": "src/libptools.so.p/third_party_ptools_m2pythontools.cc.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libptools.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -D_REENTRANT -MD -MQ src/libptools.so.p/third_party_ptools_valpython.cc.o -MF src/libptools.so.p/third_party_ptools_valpython.cc.o.d -o src/libptools.so.p/third_party_ptools_valpython.cc.o -c ../../../external/vmaf/libvmaf/src/third_party/ptools/valpython.cc",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/ptools/valpython.cc",
+    "output": "src/libptools.so.p/third_party_ptools_valpython.cc.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libptools.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -D_REENTRANT -MD -MQ src/libptools.so.p/third_party_ptools_midassocket.cc.o -MF src/libptools.so.p/third_party_ptools_midassocket.cc.o.d -o src/libptools.so.p/third_party_ptools_midassocket.cc.o -c ../../../external/vmaf/libvmaf/src/third_party/ptools/midassocket.cc",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/ptools/midassocket.cc",
+    "output": "src/libptools.so.p/third_party_ptools_midassocket.cc.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libptools.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -D_REENTRANT -MD -MQ src/libptools.so.p/third_party_ptools_valprotocol2.cc.o -MF src/libptools.so.p/third_party_ptools_valprotocol2.cc.o.d -o src/libptools.so.p/third_party_ptools_valprotocol2.cc.o -c ../../../external/vmaf/libvmaf/src/third_party/ptools/valprotocol2.cc",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/ptools/valprotocol2.cc",
+    "output": "src/libptools.so.p/third_party_ptools_valprotocol2.cc.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libptools.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -D_REENTRANT -MD -MQ src/libptools.so.p/third_party_ptools_m2ser.cc.o -MF src/libptools.so.p/third_party_ptools_m2ser.cc.o.d -o src/libptools.so.p/third_party_ptools_m2ser.cc.o -c ../../../external/vmaf/libvmaf/src/third_party/ptools/m2ser.cc",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/ptools/m2ser.cc",
+    "output": "src/libptools.so.p/third_party_ptools_m2ser.cc.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libptools.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -D_REENTRANT -MD -MQ src/libptools.so.p/third_party_ptools_m2streamdataenc.cc.o -MF src/libptools.so.p/third_party_ptools_m2streamdataenc.cc.o.d -o src/libptools.so.p/third_party_ptools_m2streamdataenc.cc.o -c ../../../external/vmaf/libvmaf/src/third_party/ptools/m2streamdataenc.cc",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/ptools/m2streamdataenc.cc",
+    "output": "src/libptools.so.p/third_party_ptools_m2streamdataenc.cc.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libptools.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -D_REENTRANT -MD -MQ src/libptools.so.p/third_party_ptools_m2convertrep.cc.o -MF src/libptools.so.p/third_party_ptools_m2convertrep.cc.o.d -o src/libptools.so.p/third_party_ptools_m2convertrep.cc.o -c ../../../external/vmaf/libvmaf/src/third_party/ptools/m2convertrep.cc",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/ptools/m2convertrep.cc",
+    "output": "src/libptools.so.p/third_party_ptools_m2convertrep.cc.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libptools.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -fno-strict-aliasing -DLINUX_ -DOC_NEW_STYLE_INCLUDES -D_REENTRANT -MD -MQ src/libptools.so.p/third_party_ptools_timeconv.cc.o -MF src/libptools.so.p/third_party_ptools_timeconv.cc.o.d -o src/libptools.so.p/third_party_ptools_timeconv.cc.o -c ../../../external/vmaf/libvmaf/src/third_party/ptools/timeconv.cc",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/ptools/timeconv.cc",
+    "output": "src/libptools.so.p/third_party_ptools_timeconv.cc.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_common_alignment.c.o -MF src/liblibvmaf_feature.a.p/feature_common_alignment.c.o.d -o src/liblibvmaf_feature.a.p/feature_common_alignment.c.o -c ../../../external/vmaf/libvmaf/src/feature/common/alignment.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/common/alignment.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_common_alignment.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_common_convolution.c.o -MF src/liblibvmaf_feature.a.p/feature_common_convolution.c.o.d -o src/liblibvmaf_feature.a.p/feature_common_convolution.c.o -c ../../../external/vmaf/libvmaf/src/feature/common/convolution.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/common/convolution.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_common_convolution.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_offset.c.o -MF src/liblibvmaf_feature.a.p/feature_offset.c.o.d -o src/liblibvmaf_feature.a.p/feature_offset.c.o -c ../../../external/vmaf/libvmaf/src/feature/offset.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/offset.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_offset.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_adm.c.o -MF src/liblibvmaf_feature.a.p/feature_adm.c.o.d -o src/liblibvmaf_feature.a.p/feature_adm.c.o -c ../../../external/vmaf/libvmaf/src/feature/adm.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/adm.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_adm.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_adm_tools.c.o -MF src/liblibvmaf_feature.a.p/feature_adm_tools.c.o.d -o src/liblibvmaf_feature.a.p/feature_adm_tools.c.o -c ../../../external/vmaf/libvmaf/src/feature/adm_tools.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/adm_tools.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_adm_tools.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_ansnr.c.o -MF src/liblibvmaf_feature.a.p/feature_ansnr.c.o.d -o src/liblibvmaf_feature.a.p/feature_ansnr.c.o -c ../../../external/vmaf/libvmaf/src/feature/ansnr.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/ansnr.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_ansnr.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_ansnr_tools.c.o -MF src/liblibvmaf_feature.a.p/feature_ansnr_tools.c.o.d -o src/liblibvmaf_feature.a.p/feature_ansnr_tools.c.o -c ../../../external/vmaf/libvmaf/src/feature/ansnr_tools.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/ansnr_tools.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_ansnr_tools.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_vif.c.o -MF src/liblibvmaf_feature.a.p/feature_vif.c.o.d -o src/liblibvmaf_feature.a.p/feature_vif.c.o -c ../../../external/vmaf/libvmaf/src/feature/vif.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/vif.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_vif.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_vif_tools.c.o -MF src/liblibvmaf_feature.a.p/feature_vif_tools.c.o.d -o src/liblibvmaf_feature.a.p/feature_vif_tools.c.o -c ../../../external/vmaf/libvmaf/src/feature/vif_tools.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/vif_tools.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_vif_tools.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_motion.c.o -MF src/liblibvmaf_feature.a.p/feature_motion.c.o.d -o src/liblibvmaf_feature.a.p/feature_motion.c.o -c ../../../external/vmaf/libvmaf/src/feature/motion.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/motion.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_motion.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_psnr.c.o -MF src/liblibvmaf_feature.a.p/feature_psnr.c.o.d -o src/liblibvmaf_feature.a.p/feature_psnr.c.o -c ../../../external/vmaf/libvmaf/src/feature/psnr.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/psnr.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_psnr.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_psnr_tools.c.o -MF src/liblibvmaf_feature.a.p/feature_psnr_tools.c.o.d -o src/liblibvmaf_feature.a.p/feature_psnr_tools.c.o -c ../../../external/vmaf/libvmaf/src/feature/psnr_tools.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/psnr_tools.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_psnr_tools.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_ssim.c.o -MF src/liblibvmaf_feature.a.p/feature_ssim.c.o.d -o src/liblibvmaf_feature.a.p/feature_ssim.c.o -c ../../../external/vmaf/libvmaf/src/feature/ssim.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/ssim.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_ssim.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_ms_ssim.c.o -MF src/liblibvmaf_feature.a.p/feature_ms_ssim.c.o.d -o src/liblibvmaf_feature.a.p/feature_ms_ssim.c.o -c ../../../external/vmaf/libvmaf/src/feature/ms_ssim.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/ms_ssim.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_ms_ssim.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_moment.c.o -MF src/liblibvmaf_feature.a.p/feature_moment.c.o.d -o src/liblibvmaf_feature.a.p/feature_moment.c.o -c ../../../external/vmaf/libvmaf/src/feature/moment.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/moment.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_moment.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_all.c.o -MF src/liblibvmaf_feature.a.p/feature_all.c.o.d -o src/liblibvmaf_feature.a.p/feature_all.c.o -c ../../../external/vmaf/libvmaf/src/feature/all.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/all.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_all.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_common_blur_array.c.o -MF src/liblibvmaf_feature.a.p/feature_common_blur_array.c.o.d -o src/liblibvmaf_feature.a.p/feature_common_blur_array.c.o -c ../../../external/vmaf/libvmaf/src/feature/common/blur_array.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/common/blur_array.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_common_blur_array.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_iqa_math_utils.c.o -MF src/liblibvmaf_feature.a.p/feature_iqa_math_utils.c.o.d -o src/liblibvmaf_feature.a.p/feature_iqa_math_utils.c.o -c ../../../external/vmaf/libvmaf/src/feature/iqa/math_utils.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/iqa/math_utils.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_iqa_math_utils.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_iqa_convolve.c.o -MF src/liblibvmaf_feature.a.p/feature_iqa_convolve.c.o.d -o src/liblibvmaf_feature.a.p/feature_iqa_convolve.c.o -c ../../../external/vmaf/libvmaf/src/feature/iqa/convolve.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/iqa/convolve.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_iqa_convolve.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_iqa_decimate.c.o -MF src/liblibvmaf_feature.a.p/feature_iqa_decimate.c.o.d -o src/liblibvmaf_feature.a.p/feature_iqa_decimate.c.o -c ../../../external/vmaf/libvmaf/src/feature/iqa/decimate.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/iqa/decimate.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_iqa_decimate.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -DHAVE_CONFIG_H -MD -MQ src/liblibvmaf_feature.a.p/feature_iqa_ssim_tools.c.o -MF src/liblibvmaf_feature.a.p/feature_iqa_ssim_tools.c.o.d -o src/liblibvmaf_feature.a.p/feature_iqa_ssim_tools.c.o -c ../../../external/vmaf/libvmaf/src/feature/iqa/ssim_tools.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/iqa/ssim_tools.c",
+    "output": "src/liblibvmaf_feature.a.p/feature_iqa_ssim_tools.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libvmaf.so.0.0.0.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf.so.0.0.0.p/third_party_pugixml_pugixml.cpp.o -MF src/libvmaf.so.0.0.0.p/third_party_pugixml_pugixml.cpp.o.d -o src/libvmaf.so.0.0.0.p/third_party_pugixml_pugixml.cpp.o -c ../../../external/vmaf/libvmaf/src/third_party/pugixml/pugixml.cpp",
+    "file": "../../../external/vmaf/libvmaf/src/third_party/pugixml/pugixml.cpp",
+    "output": "src/libvmaf.so.0.0.0.p/third_party_pugixml_pugixml.cpp.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf.so.0.0.0.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf.so.0.0.0.p/mem.c.o -MF src/libvmaf.so.0.0.0.p/mem.c.o.d -o src/libvmaf.so.0.0.0.p/mem.c.o -c ../../../external/vmaf/libvmaf/src/mem.c",
+    "file": "../../../external/vmaf/libvmaf/src/mem.c",
+    "output": "src/libvmaf.so.0.0.0.p/mem.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf.so.0.0.0.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf.so.0.0.0.p/combo.c.o -MF src/libvmaf.so.0.0.0.p/combo.c.o.d -o src/libvmaf.so.0.0.0.p/combo.c.o -c ../../../external/vmaf/libvmaf/src/combo.c",
+    "file": "../../../external/vmaf/libvmaf/src/combo.c",
+    "output": "src/libvmaf.so.0.0.0.p/combo.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf.so.0.0.0.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf.so.0.0.0.p/cpu_info.c.o -MF src/libvmaf.so.0.0.0.p/cpu_info.c.o.d -o src/libvmaf.so.0.0.0.p/cpu_info.c.o -c ../../../external/vmaf/libvmaf/src/cpu_info.c",
+    "file": "../../../external/vmaf/libvmaf/src/cpu_info.c",
+    "output": "src/libvmaf.so.0.0.0.p/cpu_info.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libvmaf.so.0.0.0.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf.so.0.0.0.p/svm.cpp.o -MF src/libvmaf.so.0.0.0.p/svm.cpp.o.d -o src/libvmaf.so.0.0.0.p/svm.cpp.o -c ../../../external/vmaf/libvmaf/src/svm.cpp",
+    "file": "../../../external/vmaf/libvmaf/src/svm.cpp",
+    "output": "src/libvmaf.so.0.0.0.p/svm.cpp.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf.so.0.0.0.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf.so.0.0.0.p/darray.c.o -MF src/libvmaf.so.0.0.0.p/darray.c.o.d -o src/libvmaf.so.0.0.0.p/darray.c.o -c ../../../external/vmaf/libvmaf/src/darray.c",
+    "file": "../../../external/vmaf/libvmaf/src/darray.c",
+    "output": "src/libvmaf.so.0.0.0.p/darray.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libvmaf.so.0.0.0.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf.so.0.0.0.p/libvmaf.cpp.o -MF src/libvmaf.so.0.0.0.p/libvmaf.cpp.o.d -o src/libvmaf.so.0.0.0.p/libvmaf.cpp.o -c ../../../external/vmaf/libvmaf/src/libvmaf.cpp",
+    "file": "../../../external/vmaf/libvmaf/src/libvmaf.cpp",
+    "output": "src/libvmaf.so.0.0.0.p/libvmaf.cpp.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libvmaf.so.0.0.0.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf.so.0.0.0.p/vmaf.cpp.o -MF src/libvmaf.so.0.0.0.p/vmaf.cpp.o.d -o src/libvmaf.so.0.0.0.p/vmaf.cpp.o -c ../../../external/vmaf/libvmaf/src/vmaf.cpp",
+    "file": "../../../external/vmaf/libvmaf/src/vmaf.cpp",
+    "output": "src/libvmaf.so.0.0.0.p/vmaf.cpp.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_picture_copy.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_picture_copy.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_picture_copy.c.o -c ../../../external/vmaf/libvmaf/src/feature/picture_copy.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/picture_copy.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_picture_copy.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_integer_psnr.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_integer_psnr.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_integer_psnr.c.o -c ../../../external/vmaf/libvmaf/src/feature/integer_psnr.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/integer_psnr.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_integer_psnr.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_feature_extractor.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_feature_extractor.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_feature_extractor.c.o -c ../../../external/vmaf/libvmaf/src/feature/feature_extractor.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/feature_extractor.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_feature_extractor.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_alias.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_alias.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_alias.c.o -c ../../../external/vmaf/libvmaf/src/feature/alias.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/alias.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_alias.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_float_adm.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_float_adm.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_float_adm.c.o -c ../../../external/vmaf/libvmaf/src/feature/float_adm.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/float_adm.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_float_adm.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_integer_adm.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_integer_adm.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_integer_adm.c.o -c ../../../external/vmaf/libvmaf/src/feature/integer_adm.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/integer_adm.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_integer_adm.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_feature_collector.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_feature_collector.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_feature_collector.c.o -c ../../../external/vmaf/libvmaf/src/feature/feature_collector.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/feature_collector.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_feature_collector.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_float_psnr.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_float_psnr.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_float_psnr.c.o -c ../../../external/vmaf/libvmaf/src/feature/float_psnr.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/float_psnr.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_float_psnr.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_float_ansnr.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_float_ansnr.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_float_ansnr.c.o -c ../../../external/vmaf/libvmaf/src/feature/float_ansnr.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/float_ansnr.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_float_ansnr.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_integer_motion.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_integer_motion.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_integer_motion.c.o -c ../../../external/vmaf/libvmaf/src/feature/integer_motion.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/integer_motion.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_integer_motion.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_float_motion.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_float_motion.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_float_motion.c.o -c ../../../external/vmaf/libvmaf/src/feature/float_motion.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/float_motion.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_float_motion.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_float_ssim.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_float_ssim.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_float_ssim.c.o -c ../../../external/vmaf/libvmaf/src/feature/float_ssim.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/float_ssim.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_float_ssim.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_float_ms_ssim.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_float_ms_ssim.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_float_ms_ssim.c.o -c ../../../external/vmaf/libvmaf/src/feature/float_ms_ssim.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/float_ms_ssim.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_float_ms_ssim.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_float_vif.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_float_vif.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_float_vif.c.o -c ../../../external/vmaf/libvmaf/src/feature/float_vif.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/float_vif.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_float_vif.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_integer_vif.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_integer_vif.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_integer_vif.c.o -c ../../../external/vmaf/libvmaf/src/feature/integer_vif.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/integer_vif.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_integer_vif.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_integer_ssim.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_integer_ssim.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_integer_ssim.c.o -c ../../../external/vmaf/libvmaf/src/feature/integer_ssim.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/integer_ssim.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_integer_ssim.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/liblibvmaf_rc_feature.a.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -MD -MQ src/liblibvmaf_rc_feature.a.p/feature_float_moment.c.o -MF src/liblibvmaf_rc_feature.a.p/feature_float_moment.c.o.d -o src/liblibvmaf_rc_feature.a.p/feature_float_moment.c.o -c ../../../external/vmaf/libvmaf/src/feature/float_moment.c",
+    "file": "../../../external/vmaf/libvmaf/src/feature/float_moment.c",
+    "output": "src/liblibvmaf_rc_feature.a.p/feature_float_moment.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/libvmaf.rc.c.o -MF src/libvmaf_rc.so.p/libvmaf.rc.c.o.d -o src/libvmaf_rc.so.p/libvmaf.rc.c.o -c ../../../external/vmaf/libvmaf/src/libvmaf.rc.c",
+    "file": "../../../external/vmaf/libvmaf/src/libvmaf.rc.c",
+    "output": "src/libvmaf_rc.so.p/libvmaf.rc.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/predict.c.o -MF src/libvmaf_rc.so.p/predict.c.o.d -o src/libvmaf_rc.so.p/predict.c.o -c ../../../external/vmaf/libvmaf/src/predict.c",
+    "file": "../../../external/vmaf/libvmaf/src/predict.c",
+    "output": "src/libvmaf_rc.so.p/predict.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/model.c.o -MF src/libvmaf_rc.so.p/model.c.o.d -o src/libvmaf_rc.so.p/model.c.o -c ../../../external/vmaf/libvmaf/src/model.c",
+    "file": "../../../external/vmaf/libvmaf/src/model.c",
+    "output": "src/libvmaf_rc.so.p/model.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/unpickle.cpp.o -MF src/libvmaf_rc.so.p/unpickle.cpp.o.d -o src/libvmaf_rc.so.p/unpickle.cpp.o -c ../../../external/vmaf/libvmaf/src/unpickle.cpp",
+    "file": "../../../external/vmaf/libvmaf/src/unpickle.cpp",
+    "output": "src/libvmaf_rc.so.p/unpickle.cpp.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/svm.cpp.o -MF src/libvmaf_rc.so.p/svm.cpp.o.d -o src/libvmaf_rc.so.p/svm.cpp.o -c ../../../external/vmaf/libvmaf/src/svm.cpp",
+    "file": "../../../external/vmaf/libvmaf/src/svm.cpp",
+    "output": "src/libvmaf_rc.so.p/svm.cpp.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/picture.c.o -MF src/libvmaf_rc.so.p/picture.c.o.d -o src/libvmaf_rc.so.p/picture.c.o -c ../../../external/vmaf/libvmaf/src/picture.c",
+    "file": "../../../external/vmaf/libvmaf/src/picture.c",
+    "output": "src/libvmaf_rc.so.p/picture.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/mem.c.o -MF src/libvmaf_rc.so.p/mem.c.o.d -o src/libvmaf_rc.so.p/mem.c.o -c ../../../external/vmaf/libvmaf/src/mem.c",
+    "file": "../../../external/vmaf/libvmaf/src/mem.c",
+    "output": "src/libvmaf_rc.so.p/mem.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/output.c.o -MF src/libvmaf_rc.so.p/output.c.o.d -o src/libvmaf_rc.so.p/output.c.o -c ../../../external/vmaf/libvmaf/src/output.c",
+    "file": "../../../external/vmaf/libvmaf/src/output.c",
+    "output": "src/libvmaf_rc.so.p/output.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/fex_ctx_vector.c.o -MF src/libvmaf_rc.so.p/fex_ctx_vector.c.o.d -o src/libvmaf_rc.so.p/fex_ctx_vector.c.o -c ../../../external/vmaf/libvmaf/src/fex_ctx_vector.c",
+    "file": "../../../external/vmaf/libvmaf/src/fex_ctx_vector.c",
+    "output": "src/libvmaf_rc.so.p/fex_ctx_vector.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/thread_pool.c.o -MF src/libvmaf_rc.so.p/thread_pool.c.o.d -o src/libvmaf_rc.so.p/thread_pool.c.o -c ../../../external/vmaf/libvmaf/src/thread_pool.c",
+    "file": "../../../external/vmaf/libvmaf/src/thread_pool.c",
+    "output": "src/libvmaf_rc.so.p/thread_pool.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/dict.c.o -MF src/libvmaf_rc.so.p/dict.c.o.d -o src/libvmaf_rc.so.p/dict.c.o -c ../../../external/vmaf/libvmaf/src/dict.c",
+    "file": "../../../external/vmaf/libvmaf/src/dict.c",
+    "output": "src/libvmaf_rc.so.p/dict.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/opt.c.o -MF src/libvmaf_rc.so.p/opt.c.o.d -o src/libvmaf_rc.so.p/opt.c.o -c ../../../external/vmaf/libvmaf/src/opt.c",
+    "file": "../../../external/vmaf/libvmaf/src/opt.c",
+    "output": "src/libvmaf_rc.so.p/opt.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Isrc/libvmaf_rc.so.p -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -fPIC -pthread -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ src/libvmaf_rc.so.p/ref.c.o -MF src/libvmaf_rc.so.p/ref.c.o.d -o src/libvmaf_rc.so.p/ref.c.o -c ../../../external/vmaf/libvmaf/src/ref.c",
+    "file": "../../../external/vmaf/libvmaf/src/ref.c",
+    "output": "src/libvmaf_rc.so.p/ref.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/g++-8 -Itools/vmafossexec.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -std=c++11 -g -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ tools/vmafossexec.p/main.cpp.o -MF tools/vmafossexec.p/main.cpp.o.d -o tools/vmafossexec.p/main.cpp.o -c ../../../external/vmaf/libvmaf/tools/main.cpp",
+    "file": "../../../external/vmaf/libvmaf/tools/main.cpp",
+    "output": "tools/vmafossexec.p/main.cpp.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Itools/vmafossexec.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ tools/vmafossexec.p/read_frame.c.o -MF tools/vmafossexec.p/read_frame.c.o.d -o tools/vmafossexec.p/read_frame.c.o -c ../../../external/vmaf/libvmaf/tools/read_frame.c",
+    "file": "../../../external/vmaf/libvmaf/tools/read_frame.c",
+    "output": "tools/vmafossexec.p/read_frame.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Itools/vmaf_rc.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -pedantic -DOC_NEW_STYLE_INCLUDES -DHAVE_STRSEP -MD -MQ tools/vmaf_rc.p/vmaf.c.o -MF tools/vmaf_rc.p/vmaf.c.o.d -o tools/vmaf_rc.p/vmaf.c.o -c ../../../external/vmaf/libvmaf/tools/vmaf.c",
+    "file": "../../../external/vmaf/libvmaf/tools/vmaf.c",
+    "output": "tools/vmaf_rc.p/vmaf.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Itools/vmaf_rc.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -pedantic -DOC_NEW_STYLE_INCLUDES -DHAVE_STRSEP -MD -MQ tools/vmaf_rc.p/cli_parse.c.o -MF tools/vmaf_rc.p/cli_parse.c.o.d -o tools/vmaf_rc.p/cli_parse.c.o -c ../../../external/vmaf/libvmaf/tools/cli_parse.c",
+    "file": "../../../external/vmaf/libvmaf/tools/cli_parse.c",
+    "output": "tools/vmaf_rc.p/cli_parse.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Itools/vmaf_rc.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -pedantic -DOC_NEW_STYLE_INCLUDES -DHAVE_STRSEP -MD -MQ tools/vmaf_rc.p/y4m_input.c.o -MF tools/vmaf_rc.p/y4m_input.c.o.d -o tools/vmaf_rc.p/y4m_input.c.o -c ../../../external/vmaf/libvmaf/tools/y4m_input.c",
+    "file": "../../../external/vmaf/libvmaf/tools/y4m_input.c",
+    "output": "tools/vmaf_rc.p/y4m_input.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Itools/vmaf_rc.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -pedantic -DOC_NEW_STYLE_INCLUDES -DHAVE_STRSEP -MD -MQ tools/vmaf_rc.p/vidinput.c.o -MF tools/vmaf_rc.p/vidinput.c.o.d -o tools/vmaf_rc.p/vidinput.c.o -c ../../../external/vmaf/libvmaf/tools/vidinput.c",
+    "file": "../../../external/vmaf/libvmaf/tools/vidinput.c",
+    "output": "tools/vmaf_rc.p/vidinput.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Itools/vmaf_rc.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -I../../../external/vmaf/libvmaf/src/third_party/ptools/opencontainers_1_8_4/include -Isrc -I../../../external/vmaf/libvmaf/src -I../../../external/vmaf/libvmaf/src/feature -I../../../external/vmaf/libvmaf/src/feature/common -I../../../external/vmaf/libvmaf/src/third_party/ptools -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -pedantic -DOC_NEW_STYLE_INCLUDES -DHAVE_STRSEP -MD -MQ tools/vmaf_rc.p/yuv_input.c.o -MF tools/vmaf_rc.p/yuv_input.c.o.d -o tools/vmaf_rc.p/yuv_input.c.o -c ../../../external/vmaf/libvmaf/tools/yuv_input.c",
+    "file": "../../../external/vmaf/libvmaf/tools/yuv_input.c",
+    "output": "tools/vmaf_rc.p/yuv_input.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Itools/vmaf_feature.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ tools/vmaf_feature.p/vmaf_feature_main.c.o -MF tools/vmaf_feature.p/vmaf_feature_main.c.o.d -o tools/vmaf_feature.p/vmaf_feature_main.c.o -c ../../../external/vmaf/libvmaf/tools/vmaf_feature_main.c",
+    "file": "../../../external/vmaf/libvmaf/tools/vmaf_feature_main.c",
+    "output": "tools/vmaf_feature.p/vmaf_feature_main.c.o"
+  },
+  {
+    "directory": "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-build",
+    "command": "/usr/bin/gcc-8 -Itools/vmaf_feature.p -Itools -I../../../external/vmaf/libvmaf/tools -Iinclude -I../../../external/vmaf/libvmaf/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -g -D_GNU_SOURCE -g3 -O0 -fno-omit-frame-pointer -pedantic -DOC_NEW_STYLE_INCLUDES -MD -MQ tools/vmaf_feature.p/read_frame.c.o -MF tools/vmaf_feature.p/read_frame.c.o.d -o tools/vmaf_feature.p/read_frame.c.o -c ../../../external/vmaf/libvmaf/tools/read_frame.c",
+    "file": "../../../external/vmaf/libvmaf/tools/read_frame.c",
+    "output": "tools/vmaf_feature.p/read_frame.c.o"
+  }
+]

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/vmaf_repo"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/vmaf_repo.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/external/vmaf-repo/CMakeFiles/vmaf_repo-complete.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-build.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-configure.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-download.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-install.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-mkdir.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-patch.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/user/Documents/DIP_Python_Project/cavif/build/src/vmaf_repo-stamp/vmaf_repo-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vmaf_repo"
+		],
+		"name" : "vmaf_repo"
+	}
+}
