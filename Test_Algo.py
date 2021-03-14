@@ -52,7 +52,7 @@ def main():
     # 'ucid00291.tif', 'ucid00350.tif'};
     # image_filenames_list = {'berkely_starfish.jpg', 'berkely_bears.jpg', 'berkely_boats.jpg',
     # 'berkely_butterfly.jpg', 'berkely_flower_and_bugs.jpg', 'berkely_sea.jpg'};
-    image_filenames_list = ['berkely_flower_and_bugs.jpg']  # TODO: Download all images
+    image_filenames_list = ['230098.jpg']  # TODO: Download all images
     #image_filenames_list = ['23.jpg']  # TODO: Download all images
 
     for image_filename in image_filenames_list:
