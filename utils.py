@@ -2,7 +2,6 @@ import numpy as np
 from scipy import signal
 import os
 import cv2
-from skimage.measure import compare_ssim
 from skimage.metrics import structural_similarity as ssim
 
 def calculate_bpp_of_file(file_name, number_of_pixels):
