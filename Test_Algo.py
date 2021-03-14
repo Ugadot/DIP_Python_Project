@@ -12,6 +12,10 @@ import os
 from BDRate import bdrate
 
 IMAGES_MAIN_FOLDER_NAME = 'images'
+CODEC = "HEVC"
+# CODEC = "AVIF"  # AV1 still images codec
+
+CODECS_FILE_EXT = {"HEVC": "bpg", "AVIF": "avif"}
 
 def matlab_style_gauss2D(shape=(3,3),sigma=0.5):
     """
@@ -40,7 +44,7 @@ def fgaussian(size, sigma):
 
 def main():
     #compression_factor_grid = [1]  # use this for a single example at a specific compression working-point
-    compression_factor_grid = [i for i in range(1,42,5)] # use this for getting rate - distortion curves
+    compression_factor_grid = [i for i in range(1, 42, 5)]  # use this for getting rate - distortion curves
 
     # image_filenames_list = {'almonds_300x300.png', 'flowers_300x300.png', 'billiard_balls_a_300x300.png',
     # 'cards_a_300x300.png', 'ducks_300x300.png', 'garden_table_300x300.png'};
@@ -54,8 +58,9 @@ def main():
     for image_filename in image_filenames_list:
         image_path = os.path.join(IMAGES_MAIN_FOLDER_NAME, image_filename)
         image_name = image_filename.split(".")[0]
+        image_results_dir = "{}_{}".format(image_name, CODEC)
 
-        result_path = os.path.join(os.getcwd(), "results", image_name)
+        result_path = os.path.join(os.getcwd(), "results", image_results_dir)
         os.makedirs(result_path, exist_ok=True)
         # load the image
         image = Image.open(image_path)
@@ -111,7 +116,7 @@ def main():
             bpp_values[lambda_counter] = bpp
             bitrate_values[lambda_counter] = utils.calculate_bits_of_file_from_bpp(bpp, I.size)
 
-            imsave('results/{}/{}_algo_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_name,
+            imsave('results/{}/{}_algo_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_results_dir,
                   image_name,
                   compression_factor,
                   bpp,
@@ -133,7 +138,7 @@ def main():
                 deteriorated_mse_values[lambda_counter] += MSE * K_weights[i]
 
                 # save images
-                imsave('results/{}/{}_algo_display_{}_qp_{}_bpp_{}_PSNR_{}_SSIM{}.png'.format(image_name,
+                imsave('results/{}/{}_algo_display_{}_qp_{}_bpp_{}_PSNR_{}_SSIM{}.png'.format(image_results_dir,
                       image_name,
                       i,
                       compression_factor,
@@ -153,8 +158,9 @@ def main():
         regular_bitrate_values = np.zeros((number_of_compression_factors, 1))
         regular_deteriorated_mse_values = np.zeros((number_of_compression_factors, 1))
 
-        #compressed_file = 'temp.bpg'
-        compressed_file = 'temp.avif'
+        compressed_file_ext = CODECS_FILE_EXT[CODEC]
+        compressed_file = 'temp.{}'.format(compressed_file_ext)
+
         for compression_factor_counter, compression_factor in enumerate(compression_factor_grid):
 
             #regular_clean_reconstruction = hevc(255 * I, compression_factor, compressed_file)
@@ -165,7 +171,7 @@ def main():
             regular_bitrate_values[compression_factor_counter] = utils.calculate_bits_of_file(compressed_file)
             current_bpp = regular_bpp_values[compression_factor_counter][0]
 
-            imsave('results/{}/{}_regular_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_name,
+            imsave('results/{}/{}_regular_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_results_dir,
                   image_name,
                   compression_factor,
                   current_bpp,
@@ -187,7 +193,7 @@ def main():
                 regular_deteriorated_mse_values[compression_factor_counter] += MSE * K_weights[i]
 
                 # save images
-                imsave('results/{}/{}_regular_display_{}_qp_{}_bpp_{}_PSNR_{}_SSIM_{}.png'.format(image_name,
+                imsave('results/{}/{}_regular_display_{}_qp_{}_bpp_{}_PSNR_{}_SSIM_{}.png'.format(image_results_dir,
                          image_name,
                          i,
                          compression_factor,
@@ -216,7 +222,7 @@ def main():
         #PrintGraph(regular_bitrate_values, regular_bitrate_values, regular_bpp_values, regular_bpp_values, regular_deteriorated_ssim_values, regular_deteriorated_ssim_values, "SSIM", image_name)
 
 def PrintGraph(rate1, rate2, bpp1, bpp2, quality1, quality2, metric, image_name):
-    bdrate_metric = bdrate(rate1.flatten(), quality1.flatten(), rate2.flatten(), quality2.flatten())
+    bdrate_metric = bdrate(rate2.flatten(), quality2.flatten(), rate1.flatten(), quality1.flatten())
 
     max_quality = max(np.max(quality1), np.max(quality2))
     min_quality = min(np.min(quality1), np.min(quality2))
@@ -228,7 +234,7 @@ def PrintGraph(rate1, rate2, bpp1, bpp2, quality1, quality2, metric, image_name)
     plt.ylabel(metric)
     plt.ylim(0.99 * min_quality, 1.01 * max_quality)
     plt.legend(handles=[line_regular, line_algo], loc=4)
-    plt.savefig('RD_curve_{}_regular_VS_multiple_{}_bdrate_{}.png'.format(image_name, metric, bdrate_metric))
+    plt.savefig('{}_RD_curve_{}_regular_VS_multiple_{}_bdrate_{}.png'.format(CODEC, image_name, metric, bdrate_metric))
     plt.show()
 
 if __name__=='__main__':
