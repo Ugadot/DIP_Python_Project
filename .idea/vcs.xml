@@ -2,6 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/aom/aom" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cavif" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/davif" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/davif/davif" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ffmpeg/aom/aom" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/vmaf" vcs="Git" />
   </component>
 </project>

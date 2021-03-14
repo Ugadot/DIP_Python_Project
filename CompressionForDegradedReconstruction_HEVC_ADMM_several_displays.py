@@ -1,6 +1,4 @@
-import math
 import numpy as np
-import scipy
 from scipy import signal
 from scipy.sparse.linalg import bicg
 from scipy.sparse.linalg import LinearOperator

@@ -12,10 +12,11 @@ import os
 from BDRate import bdrate
 
 IMAGES_MAIN_FOLDER_NAME = 'images'
-CODEC = "HEVC"
-# CODEC = "AVIF"  # AV1 still images codec
+#CODEC = "HEVC"
+CODEC = "AVIF"  # AV1 still images codec
 
 CODECS_FILE_EXT = {"HEVC": "bpg", "AVIF": "avif"}
+CODECS_WRAPPERS = {"HEVC": hevc, "AVIF": avif}
 
 def matlab_style_gauss2D(shape=(3,3),sigma=0.5):
     """
@@ -46,12 +47,12 @@ def main():
     #compression_factor_grid = [1]  # use this for a single example at a specific compression working-point
     compression_factor_grid = [i for i in range(1, 42, 5)]  # use this for getting rate - distortion curves
 
-    # image_filenames_list = {'almonds_300x300.png', 'flowers_300x300.png', 'billiard_balls_a_300x300.png',
-    # 'cards_a_300x300.png', 'ducks_300x300.png', 'garden_table_300x300.png'};
-    # image_filenames_list = {'ucid00006.tif', 'ucid00015.tif', 'ucid00022.tif', 'ucid00024.tif',
-    # 'ucid00291.tif', 'ucid00350.tif'};
-    # image_filenames_list = {'berkely_starfish.jpg', 'berkely_bears.jpg', 'berkely_boats.jpg',
-    # 'berkely_butterfly.jpg', 'berkely_flower_and_bugs.jpg', 'berkely_sea.jpg'};
+    # image_filenames_list = ['almonds_300x300.png', 'flowers_300x300.png', 'billiard_balls_a_300x300.png',
+    # 'cards_a_300x300.png', 'ducks_300x300.png', 'garden_table_300x300.png']
+    # image_filenames_list = ['ucid00006.tif', 'ucid00015.tif', 'ucid00022.tif', 'ucid00024.tif',
+    # 'ucid00291.tif', 'ucid00350.tif']
+    image_filenames_list = ['berkely_starfish.jpg', 'berkely_bears.jpg', 'berkely_boats.jpg',
+                        'berkely_butterfly.jpg', 'berkely_flower_and_bugs.jpg', 'berkely_sea.jpg']
     image_filenames_list = ['230098.jpg']  # TODO: Download all images
     #image_filenames_list = ['23.jpg']  # TODO: Download all images
 
@@ -150,6 +151,7 @@ def main():
         ####### End of Proposed Algorithm  ---------------------- ############
 
         ####### Redernece - Regular compression with degraded reconstruction ########
+        func = CODECS_WRAPPERS[CODEC]
         number_of_compression_factors = len(compression_factor_grid)
 
         regular_deteriorated_psnr_values = np.zeros((number_of_compression_factors, 1))
@@ -164,7 +166,7 @@ def main():
         for compression_factor_counter, compression_factor in enumerate(compression_factor_grid):
 
             #regular_clean_reconstruction = hevc(255 * I, compression_factor, compressed_file)
-            regular_clean_reconstruction = avif(255 * I, compression_factor, compressed_file)
+            regular_clean_reconstruction = func(255 * I, compression_factor, compressed_file)
             regular_clean_reconstruction = regular_clean_reconstruction / 255.0
 
             regular_bpp_values[compression_factor_counter] = utils.calculate_bpp_of_file(compressed_file, I.size)
