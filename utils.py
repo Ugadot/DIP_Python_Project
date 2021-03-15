@@ -104,5 +104,28 @@ def ApplyNoiseBlur(image, kernel):
     return paddad_picture
 
 
+def matlab_style_gauss2D(shape=(3,3),sigma=0.5):
+    """
+    2D gaussian mask - should give the same result as MATLAB's
+    fspecial('gaussian',[shape],[sigma])
+    """
+    m, n = [(ss-1.)/2. for ss in shape]
+    y, x = np.ogrid[-m:m+1,-n:n+1]
+    h = np.exp( -(x*x + y*y) / (2.*sigma*sigma))
+    h[h < np.finfo(h.dtype).eps*h.max()] = 0
+    sumh = h.sum()
+    if sumh != 0:
+        h /= sumh
+    return h
 
+def fgaussian(size, sigma):
+    r2 = (size[0] - 1) // 2
+    c2 = (size[1] - 1) // 2
+    xs = [i - r2 for i in range(2*r2 + 1)]
+    ys = [i - c2 for i in range(2 * c2 + 1)]
+    [x, y] = np.meshgrid(xs, ys)
+    radsqrd = np.power(x, 2) + np.power(y, 2)
+    f = np.exp(-radsqrd / (2 * sigma ** 2))
+    f = f / np.sum(f)
+    return f
 

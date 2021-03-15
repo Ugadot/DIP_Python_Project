@@ -20,19 +20,13 @@ def GetLinearOperatorforBicG(K_set, K_weights, counts, beta, my_lambda, ss):
     def matvec(x):
         xx = x.reshape(ss, order='F')
 
-        K = K_set[0]
-        xx_tapered = np.pad(xx, (k_row // 2, k_col // 2), 'edge')
-
-        tt = signal.convolve2d(xx_tapered, K, mode='same')
-        y = my_lambda * K_weights[0] * signal.convolve2d(tt, np.rot90(np.rot90(K)), mode='same')
-
-        K = K_set[1]
-        tt = signal.convolve2d(xx_tapered, K, mode='same')
-        y = y + my_lambda * K_weights[1] * signal.convolve2d(tt, np.rot90(np.rot90(K)), mode='same')
-
-        K = K_set[2]
-        tt = signal.convolve2d(xx_tapered, K, mode='same')
-        y = y + my_lambda * K_weights[2] * signal.convolve2d(tt, np.rot90(np.rot90(K)), mode='same')
+        for index, K in enumerate(K_set):
+            xx_tapered = np.pad(xx, (k_row // 2, k_col // 2), 'edge')
+            tt = signal.convolve2d(xx_tapered, K, mode='same')
+            if index == 0:
+                y = my_lambda * K_weights[index] * signal.convolve2d(tt, np.rot90(np.rot90(K)), mode='same')
+            else:
+                y += my_lambda * K_weights[index] * signal.convolve2d(tt, np.rot90(np.rot90(K)), mode='same')
 
         # Get rid of padding
         y = y[k_row // 2: - (k_row // 2), k_col // 2: -(k_col // 2)]
@@ -58,17 +52,16 @@ def cfdr(I, K_set, K_weights, beta, number_of_iterations, compression_factor, co
     cleanI = I
     u = np.zeros(np.shape(cleanI), dtype=float)
 
-    K = K_set[0]
-    I_tapered = np.pad(I, (K.shape[0]//2, K.shape[1]//2), mode='edge')
+    displays = []
+    for K in K_set:
+        I_tapered = np.pad(I, (K.shape[0]//2, K.shape[1]//2), mode='edge')
+        tt_display = signal.convolve2d(I_tapered, np.rot90(np.rot90(K)), mode='same')
+        displays.append(tt_display)
 
-    tt1_display1 = signal.convolve2d(I_tapered, np.rot90(np.rot90(K)), mode='same')
-    K = K_set[1]
-    tt1_display2 = signal.convolve2d(I_tapered, np.rot90(np.rot90(K)), mode='same')
+    tt1 = displays[0] * K_weights[0]
+    for index in range(1, len(displays)):
+        tt1 = tt1 + K_weights[index] * displays[index]
 
-    K = K_set[2]
-    tt1_display3 = signal.convolve2d(I_tapered, np.rot90(np.rot90(K)),  mode='same')
-
-    tt1 = K_weights[0] * tt1_display1 + K_weights[1] * tt1_display2 + K_weights[2] * tt1_display3
     # Getting rid of padding:
     tt1 = tt1[K.shape[0]//2: -(K.shape[0]//2), K.shape[1]//2: -(K.shape[1]//2)]
     ######
