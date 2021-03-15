@@ -24,8 +24,9 @@ in order to run just run RunAlgo.py file with the selected paramters.
 Make sure that there is a "results" directory named - "results" - All of the compressed filter before and after degredation + the total RD_curves would appear in the
 relevant directory. In addition each picture and/or graph would have their calculated metrics as a part of it's name.
 
-For questions you can contact the following:
 
-Uri Gadot - uri.gad@campus.technion.ac.il
 
+For questions you can contact the following: </br>
+
+Uri Gadot - uri.gad@campus.technion.ac.il </br>
 Maor Asher - maor.asher@campus.technion.ac.il
