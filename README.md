@@ -25,8 +25,7 @@ Make sure that there is a "results" directory named - "results" - All of the com
 relevant directory. In addition each picture and/or graph would have their calculated metrics as a part of it's name.
 
 
-
+<br/><br/><br/>
 For questions you can contact the following: </br>
-
 Uri Gadot - uri.gad@campus.technion.ac.il </br>
 Maor Asher - maor.asher@campus.technion.ac.il
