@@ -33,7 +33,7 @@ COMPRESSION_FACTOR_LIST = [i for i in range(1, 42, 5)]  # use this for getting r
 # image_filenames_list = ['berkely_starfish.jpg', 'berkely_bears.jpg', 'berkely_boats.jpg',
 #                    'berkely_butterfly.jpg', 'berkely_flower_and_bugs.jpg', 'berkely_sea.jpg']
 # image_filenames_list = ['108004.jpg', '107072.jpg', '128035.jpg', '81095.jpg']  # TODO: Download all images
-IMAGES = ['108004.jpg']
+IMAGES = ['107072.jpg', '128035.jpg', '81095.jpg']
 
 def main():
 
@@ -146,11 +146,12 @@ def main():
             single_bpp_values[lambda_counter] = bpp
             single_bitrate_values[lambda_counter] = utils.calculate_bits_of_file_from_bpp(bpp, I.size)
 
-            imsave('results/{}/{}_algo_single_screen_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_results_dir,
+            imsave('results/{}/{}_algo_single_screen_before_display_qp_{}_bpp_{}_PSNR_{}_SSIM_{}.png'.format(image_results_dir,
                   image_name,
                   compression_factor,
                   bpp,
-                  utils.CalcPSNR(I, clean_reconstruction, 1)),
+                  utils.CalcPSNR(I, clean_reconstruction, 1),
+                  utils.CalcSSIM(I, clean_reconstruction, True)),
                   clean_reconstruction, cmap='gray')
 
             single_deteriorated_psnr_values[lambda_counter] = 0
@@ -168,7 +169,7 @@ def main():
                 single_deteriorated_mse_values[lambda_counter] += MSE * K_WEIGHTS[i]
 
                 # save images
-                imsave('results/{}/{}_algo_single_screen_display_{}_qp_{}_bpp_{}_PSNR_{}_SSIM{}.png'.format(image_results_dir,
+                imsave('results/{}/{}_algo_single_screen_display_{}_qp_{}_bpp_{}_PSNR_{}_SSIM_{}.png'.format(image_results_dir,
                       image_name,
                       i,
                       compression_factor,
@@ -199,11 +200,12 @@ def main():
             regular_bitrate_values[compression_factor_counter] = utils.calculate_bits_of_file(compressed_file)
             current_bpp = regular_bpp_values[compression_factor_counter][0]
 
-            imsave('results/{}/{}_regular_before_display_qp_{}_bpp_{}_PSNR_{}.png'.format(image_results_dir,
+            imsave('results/{}/{}_regular_before_display_qp_{}_bpp_{}_PSNR_{}_SSIM_{}.png'.format(image_results_dir,
                   image_name,
                   compression_factor,
                   current_bpp,
-                  utils.CalcPSNR(I, regular_clean_reconstruction, 1)),
+                  utils.CalcPSNR(I, regular_clean_reconstruction, 1),
+                  utils.CalcSSIM(I, clean_reconstruction, True)),
                    regular_clean_reconstruction, cmap='gray')
 
             regular_deteriorated_psnr_values[compression_factor_counter] = 0

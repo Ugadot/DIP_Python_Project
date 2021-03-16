@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from BDRate import bdrate
 
+
 def PrintGraphMultiple(series_dict, metric, image_name, result_dir, codec):
     max_quality = - float("inf")
     min_quality = float("inf")
@@ -22,7 +23,7 @@ def PrintGraphMultiple(series_dict, metric, image_name, result_dir, codec):
     plt.show()
 
 def PrintGraph(rate1, rate2, bpp1, bpp2, quality1, quality2, metric, image_name, result_dir, codec):
-    bdrate_metric = bdrate(rate2.flatten(), quality2.flatten(), rate1.flatten(), quality1.flatten())
+    bdrate_metric = bdrate(rate1.flatten(), quality1.flatten(), rate2.flatten(), quality2.flatten())
 
     max_quality = max(np.max(quality1), np.max(quality2))
     min_quality = min(np.min(quality1), np.min(quality2))
